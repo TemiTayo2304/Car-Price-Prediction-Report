@@ -1,15 +1,17 @@
-# Car-Price-Prediction-Report
-Car Price Prediction report using Correlation and Multiple linear regression analysis in Excel
+# Car-Price-Prediction-Report#
 CAR PRICE PREDICTION USING MULTIPLE LINEAR REGRESSION ANALYSIS IN EXCEL
 
 INTRODUCTION
+
 The analysis aims at identifying significant variables required to predict the price of a car and to describe how well the variables describe the price of the car. 
 
 UNDERSTANDING DATA STRUCTURE
+
 The dataset used for this analysis with a 250 sample size was gotten from Kaggle, containing car prices and attributes related to the predictive analysis. The dataset contained 13 numerical variables and 10 categorical variables.
 By understanding the data structure and the variables involved, correlation analysis was further done to explore the relationships between these car attributes and the prices. This analysis will provide insights into the factors that may influence car prices and help understand the dynamics of the car market.
 
 DATA CLEANING AND EXPLORATION
+
 •	Incorrect spellings; the car names with incorrect spellings were corrected.
 •	The Car brands were extracted from the car name column and converted to the proper text format.
 •	The prices of the car were adjusted to the right format.
@@ -34,8 +36,11 @@ Count	205.00
 
 
 CORRELATION AND MULTIPLE REGRESSION ANALYSIS
+
 NUMERICAL VARIABLES
+
 Correlation result summary
+
 Independent variable	Corr. coefficient (r)	Description
 Wheelbase	0.58	Moderate Positive correlation
 Car length	0.68	Moderate Positive correlation
@@ -62,6 +67,7 @@ Calculating Variance Inflation Factor (VIF) of each variable
 To address multicollinearity, the engine size which has high value of VIF (approximately 5) was removed.
 
 CATEGORICAL VARIABLES
+
 The categorical variables which are aspiration, Car body, Engine Type, Cylinder number, Door number, and Fuel type, were converted into dummy variables, and regression analysis was performed.
 Regression Analysis Result for each variable
 Car Name; this regression analysis was performed after removing variables with evidence of possible multicollinearity and presence of extreme values.
@@ -83,7 +89,9 @@ Toyota	-8007.57	1340.86	-5.97	0.00
 Volkswagen	-7957.88	2145.37	-3.71	0.00
 
 Interpretation; 38% of the variation in the price of a car is dependent on the car model and the P-values show that the variables are statistically significant. However, the higher standard error associated with the coefficient indicates that the estimate not precise and therefore not reliable which reduces the confidence that we can have in the estimate. 
+
 Drive Wheel
+
 Regression Statistics			
 Multiple R	0.64			
 R Square	0.41			
@@ -112,7 +120,9 @@ two	-22980	5472.54	-4.19	0.00
 Interpretation; the adjusted R square indicates that 63% of variance in the price of car can be explained by the cylinder number. The variables "four," "six," "five," "three," and "two" have low p-values (all less than 0.05), suggesting statistically significant relationships with car prices. Including these variables in the model would be relevant as they provide information about the engine's cylinder configuration, which can influence car prices.
 
 Engine Type
-Regression Statistics			
+
+Regression Statistics	
+
 Multiple R	0.47			
 R Square	0.22			
 Adjusted R Square	0.19			
@@ -128,7 +138,9 @@ rotor	-18380.50	8000.51	-2.30	0.0
 Interpretation; the adjusted R square indicates that 22% of variance in the price of car can be explained by the drive wheel. The variables "ohcf," "L," "ohc," and "rotor" have low p-values (all less than 0.05), indicating statistically significant relationships with car prices. Including these variables in the model would be valuable as they represent different engine types, which can impact car prices.
 
 Car Body
-Regression Statistics			
+
+Regression Statistics
+
 Multiple R	0.37			
 R Square	0.14			
 Adjusted R Square	0.12			
@@ -142,7 +154,9 @@ wagon	-9518.54	3404.64	-2.80	0.01
 Interpretation; the adjusted R square indicates that 14% of the variance in the price of the car can be explained by the drive wheel. The p-values associated with the rwd indicate that it is statistically significant but that of fwd indicates that it is not statistically significant and may not provide meaningful insights or improve model predictive accuracy. 
 
 Door Number
-Regression Statistics			
+
+Regression Statistics
+
 Multiple R	0.03			
 R Square	0.00			
 Adjusted R Square	-0.00			
@@ -153,7 +167,9 @@ four	511.23	1126.51	0.45	0.65
 Interpretation; the adjusted R square of 0% shows that the price of car cannot be explained by the door number. The p-values associated with the door number (four) is very high which indicates that it is not statistically significant and including it in the model may not be necessary as it does not provide strong evidence of influencing car price.
 
 Aspiration
-Regression Statistics			
+
+Regression Statistics	
+
 Multiple R	0.18			
 R Square	0.03			
 Adjusted R Square	0.03			
@@ -164,7 +180,9 @@ std	-3686.9	1431.16	-2.58	0.01
 Interpretation; The p-value indicates that the analysis is statistically significant but the adjusted R square indicates that the variable contributes 3.0% to the variance in the price of the car and so including this to the predictive model may not contribute valuable information or enhance the model's performance.
 
 Engine Location
-Regression Statistics			
+
+Regression Statistics
+
 Multiple R	0.32			
 R Square	0.11			
 Adjusted R Square	0.10			
@@ -175,7 +193,9 @@ front	-21566.9	4405.10	-4.89	0.00
 Interpretation; the R square indicates that 11% of the variance in the price of the car can be explained by the engine location. The p-values show that the analysis is statistically significant. This variable would however not be included in the model due to the low coefficient of determination.
 
 Fuel Type
-Regression Statistics			
+
+Regression Statistics	
+
 Multiple R	0.10			
 R Square	0.01			
 Adjusted R Square	0.00			
@@ -270,6 +290,7 @@ Linear Regression Model Equation
 Dependent variable (Price of car) = -16142.9 + 66.41401 * horsepower + -3097.06 * dohc + -5156.62 * L + 10413.67 * three + 2345.715 * rwd + 8.635081 * curb weight
 
 Testing the Model Using Prediction
+
 Expected car price; 13495
 Engine Type; dohc
 Horse Power; 111
@@ -278,24 +299,26 @@ Curb weight; 2548
 Drive wheel; rwd
 
 Using the regression model equation;
+
 -16142.9 + 66.41401 * horsepower + -3097.06 * dohc + -5156.62 * L + 10413.67 * three + 2345.715 * rwd + 8.635081 * curb weight
 Y (price of the car) = -16142.9 + 66.41401 * 111 + -3097.06 * 1 + -5156.62 *0 + 10413.67 * 0 + 2345.715 * 1 + 8.635081 * 2548
 
 Predicted price: 12,479.9
+
 Actual price: 10,661.05 (79% of the expected price)
 Deviation: The predicted price is 1,818.85 higher than the actual price.
 
 Assessment: Based on this evaluation, the prediction is slightly overestimating the actual price.
 
-#LIMITATION
+##LIMITATION
 
 The presence of heteroscedasticity in the data, possibly due to the small sample size pf 205 observations, may have impacted the accuracy of the correlation analysis. The small sample size also limits the generalizability of the findings. Future research with larger samples and robust statistical techniques is recommended.
 
-#CONCLUSION
+##CONCLUSION
 
 The regression model developed explains approximately 79% of the variance in car prices, 21% can is dependent on other unknown variables. However, further improvements or alternative modelling approaches can be considered. 
 Overall, this analysis provides insights into the significant variables and their relationships with car prices, helping to understand the dynamics of the car market and providing a foundation for predicting car prices using multiple linear regression analysis.  
 
-#RECOMMENDATION
+##RECOMMENDATION
 
 Future research in car price prediction should focus on enhancing the robustness and generalizability of findings. This can be achieved simply by increasing the sample size to improve statistical power and enable broader generalization. Additionally, employing advanced statistical techniques specifically designed to address heteroscedasticity would enhance the accuracy of the analysis.
