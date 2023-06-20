@@ -1,4 +1,4 @@
-# Car-Price-Prediction-Report#
+# Car-Price-Prediction-Report
 CAR PRICE PREDICTION USING MULTIPLE LINEAR REGRESSION ANALYSIS IN EXCEL
 
 INTRODUCTION
@@ -60,16 +60,20 @@ Significant Numerical Variables based on the correlation analysis
 1.	Curb weight
 2.	Engine Size
 3.	Horsepower
+   
 Calculating Variance Inflation Factor (VIF) of each variable
 •	Engine size; 4.77
 •	Horse power; 3.02
 •	Curb weight; 3.77
+
 To address multicollinearity, the engine size which has high value of VIF (approximately 5) was removed.
 
 CATEGORICAL VARIABLES
 
 The categorical variables which are aspiration, Car body, Engine Type, Cylinder number, Door number, and Fuel type, were converted into dummy variables, and regression analysis was performed.
+
 Regression Analysis Result for each variable
+
 Car Name; this regression analysis was performed after removing variables with evidence of possible multicollinearity and presence of extreme values.
 Regression Statistics			
 Multiple R	0.62			
@@ -310,15 +314,15 @@ Deviation: The predicted price is 1,818.85 higher than the actual price.
 
 Assessment: Based on this evaluation, the prediction is slightly overestimating the actual price.
 
-##LIMITATION
+LIMITATION
 
 The presence of heteroscedasticity in the data, possibly due to the small sample size pf 205 observations, may have impacted the accuracy of the correlation analysis. The small sample size also limits the generalizability of the findings. Future research with larger samples and robust statistical techniques is recommended.
 
-##CONCLUSION
+CONCLUSION
 
 The regression model developed explains approximately 79% of the variance in car prices, 21% can is dependent on other unknown variables. However, further improvements or alternative modelling approaches can be considered. 
 Overall, this analysis provides insights into the significant variables and their relationships with car prices, helping to understand the dynamics of the car market and providing a foundation for predicting car prices using multiple linear regression analysis.  
 
-##RECOMMENDATION
+RECOMMENDATION
 
 Future research in car price prediction should focus on enhancing the robustness and generalizability of findings. This can be achieved simply by increasing the sample size to improve statistical power and enable broader generalization. Additionally, employing advanced statistical techniques specifically designed to address heteroscedasticity would enhance the accuracy of the analysis.
