@@ -105,13 +105,16 @@ Intercept	11087.46	2054.75	5.39	0.00
 rwd	8823.346	2173.01	4.06	0.00
 fwd	-1848.15	2130.41	-0.87	0.39
 
-Interpretation; the adjusted R square indicates that 41% of variance in the price of car can be explained by the drive wheel. The variable "rwd" (Rear-Wheel Drive) has a low p-value of 0.00, indicating a statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
+Interpretation; the adjusted R square indicates that 41% of the variance in the price of the car can be explained by the drive wheel. The variable "rwd" (Rear-Wheel Drive) has a low p-value of 0.00, indicating a statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
 
 Cylinder Number
-Regression Statistics			
+
+Regression Statistics
+
 Multiple R	0.79			
 R Square	0.63			
-Adjusted R Square	0.62			
+Adjusted R Square	0.62	
+
  	Coefficients	Standard Error	t Stat	P-value
 Intercept	36000	4894.79	7.35	0.00
 four	-25714.2	4910.16	-5.24	0.00
@@ -129,7 +132,8 @@ Regression Statistics
 
 Multiple R	0.47			
 R Square	0.22			
-Adjusted R Square	0.19			
+Adjusted R Square	0.19
+
  	Coefficients	Standard Error	t Stat	P-value
 Intercept	31400.50	7155.87	4.39	0.0
 dohc	-13284.08	7448.07	-1.78	0.1
@@ -147,7 +151,8 @@ Regression Statistics
 
 Multiple R	0.37			
 R Square	0.14			
-Adjusted R Square	0.12			
+Adjusted R Square	0.12	
+
  	Coefficients	Standard Error	t Stat	P-value
 Intercept	21890.50	3057.46	7.16	0.00
 hatchback	-11513.85	3185.80	-3.61	0.00
