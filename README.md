@@ -13,7 +13,9 @@ By understanding the data structure and the variables involved, correlation anal
 DATA CLEANING AND EXPLORATION
 
 •	Incorrect spellings; the car names with incorrect spellings were corrected.
+
 •	The Car brands were extracted from the car name column and converted to the proper text format.
+
 •	The prices of the car were adjusted to the right format.
 
 DESCRIPTIVE STATISTICS OF THE CAR PRICES
