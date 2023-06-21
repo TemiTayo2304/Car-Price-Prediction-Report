@@ -24,17 +24,29 @@ DESCRIPTIVE STATISTICS OF THE CAR PRICES
 Summary statistics table
 	
 Mean	| 13276.71
+
 Standard Error	| 557.97
+
 Median	| 10295.00
+
 Mode	| 16500.00
+
 Standard Deviation| 7988.85
+
 Sample Variance| 63821761.58
+
 Kurtosis| 3.05
+
 Skewness	1.78
+
 Range	40282.00
+
 Minimum	5118.00
+
 Maximum	45400.00
+
 Sum	2721725.67
+
 Count	205.00
 
 
@@ -44,71 +56,69 @@ NUMERICAL VARIABLES
 
 Correlation result summary
 
-Independent variable	Corr. coefficient (r)	Description
-Wheelbase	0.58	Moderate Positive correlation
-Car length	0.68	Moderate Positive correlation
-Car width	0.76	Strong Positive correlation
-Car height	0.12	Weak Positive correlation
-Curb weight	0.84	Strong Positive correlation
-Engine size	0.87	Strong Positive correlation
-Bore ratio	0.55	Moderate Positive correlation
-Stroke	0.08	Weak Positive correlation
-Compression ratio	0.07	Weak Positive correlation
-Horsepower	0.81	Strong Positive correlation
-Peak rpm	-0.09	Weak Negative correlation
-City mpg	-0.69	Weak Negative correlation
-Highway mpg	-0.70	Weak Negative correlation
+Independent variables
+
+Wheelbase| 0.58| Moderate Positive correlation
+
+Car length| 0.68| Moderate Positive correlation
+
+Car width| 0.76| Strong Positive correlation
+
+Car height| 0.12| Weak Positive correlation
+
+Curb weight| 0.84| Strong Positive correlation
+
+Engine size| 0.87| Strong Positive correlation
+
+Bore ratio| 0.55| Moderate Positive correlation
+
+Stroke| 0.08| Weak Positive correlation
+
+Compression ratio| 0.07| Weak Positive correlation
+
+Horsepower| 0.81| Strong Positive correlation
+
+Peak rpm| -0.09| Weak Negative correlation
+
+City mpg| -0.69| Weak Negative correlation
+
+Highway mpg|-0.70| Weak Negative correlation
 
 Significant Numerical Variables based on the correlation analysis
+
 1.	Curb weight
 2.	Engine Size
 3.	Horsepower
    
 Calculating Variance Inflation Factor (VIF) of each variable
+
 •	Engine size; 4.77
+
 •	Horse power; 3.02
+
 •	Curb weight; 3.77
 
 To address multicollinearity, the engine size which has high value of VIF (approximately 5) was removed.
 
 CATEGORICAL VARIABLES
 
-The categorical variables which are aspiration, Car body, Engine Type, Cylinder number, Door number, and Fuel type, were converted into dummy variables, and regression analysis was performed.
+They were converted into dummy variables, and regression analysis was performed.
 
 Regression Analysis Result for each variable
 
-Car Name; this regression analysis was performed after removing variables with evidence of possible multicollinearity and presence of extreme values.
-Regression Statistics			
-Multiple R	0.62			
-R Square	0.39			
-Adjusted R Square	0.36			
-				
- 	Coefficients	Standard Error	t Stat	P-value
-Intercept	17893.38	723.20	24.74	0.00
-Honda	-9708.69	1913.42	-5.07	0.00
-Mazda	-7240.50	1709.62	-4.24	0.00
-Mitsubishi	-8653.62	1913.42	-4.52	0.00
-Nissan	-7477.72	1670.17	-4.48	0.00
-Plymouth	-9929.96	2520.12	-3.94	0.00
-Porsche	13507.12	2946.56	4.58	0.00
-Subaru	-9352.13	1980.58	-4.72	0.00
-Toyota	-8007.57	1340.86	-5.97	0.00
-Volkswagen	-7957.88	2145.37	-3.71	0.00
+#Car Name; 
 
-Interpretation; 38% of the variation in the price of a car is dependent on the car model and the P-values show that the variables are statistically significant. However, the higher standard error associated with the coefficient indicates that the estimate not precise and therefore not reliable which reduces the confidence that we can have in the estimate. 
+this regression analysis was performed after removing variables with evidence of possible multicollinearity and presence of extreme values.
 
-Drive Wheel
+Interpretation from regression analysis;
 
-Regression Statistics			
-Multiple R	0.64			
-R Square	0.41			
-Adjusted R Square	0.40			
- 	Coefficients	Standard Error	t Stat	P-value
-Intercept	11087.46	2054.75	5.39	0.00
-rwd	8823.346	2173.01	4.06	0.00
-fwd	-1848.15	2130.41	-0.87	0.39
+38% of the variation in the price of a car is dependent on the car model and the P-values show that the variables are statistically significant. However, the higher standard error associated with the coefficient indicates that the estimate not precise and therefore not reliable which reduces the confidence that we can have in the estimate. 
 
-Interpretation; the adjusted R square indicates that 41% of the variance in the price of the car can be explained by the drive wheel. The variable "rwd" (Rear-Wheel Drive) has a low p-value of 0.00, indicating a statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
+#Drive Wheel
+
+Interpretation from regression analysis; 
+
+the adjusted R square indicates that 41% of the variance in the price of the car can be explained by the drive wheel. The variable "rwd" (Rear-Wheel Drive) has a low p-value of 0.00, indicating a statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
 
 Cylinder Number
 
