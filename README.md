@@ -10,11 +10,9 @@ UNDERSTANDING DATA STRUCTURE
 
 The dataset has a sample size of 250 was gotten from Kaggle, containing 13 numerical and 10 categorical car attributes.
 
-Correction and regression analysis was further done to explore the relationships between these car attributes and the prices to provide insights and help understand the dynamics of the car marke.
-
 DATA CLEANING AND EXPLORATION
 
-•	Incorrect spellings; the car names with incorrect spellings were corrected.
+•	Car names with incorrect spellings were corrected.
 
 •	The Car brands were extracted from the car name column and converted to the proper text format.
 
@@ -75,7 +73,7 @@ Significant Numerical Variables based on the correlation analysis
 
 1.	Curb weight	
 2.	Engine Size	
-3. Horsepower
+3.      Horsepower
    
 Calculating VIF of each variable
 
@@ -103,27 +101,26 @@ Interpretation from regression analysis;
 
 Interpretation from regression analysis; 
 
-Adjusted R square indicated that 41% of the variance in the price of the car can be explained by the drive wheel. The variable "rwd" (Rear-Wheel Drive) has a low p-value of 0.00, indicating a statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
+Adjusted R square indicated that 41% of the variance in the price of the car can be explained by the drive wheel specifically the variable "rwd" wwhich is statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
 
 #Cylinder Number
 
 Interpretation from regression analysis; 
 
-the adjusted R square indicates that 63% of variance in the price of car can be explained by the cylinder number. The variables "four," "six," "five," "three," and "two" have low p-values (all less than 0.05), suggesting statistically significant relationships with car prices. Including these variables in the model would be relevant as they provide information about the engine's cylinder configuration, which can influence car prices.
+Adjusted R square indicates that 63% of variance in the price of car can be explained by the cylinder number. The variables "four," "six," "five," "three," and "two" have low p-values (all less than 0.05), suggesting statistically significant relationships with car prices. Including these variables in the model would be relevant as they provide information about the engine's cylinder configuration, which can influence car prices.
 
 #Engine Type
 
-Interpretation; the adjusted R square indicates that 22% of variance in the price of car can be explained by the drive wheel. The variables "ohcf," "L," "ohc," and "rotor" have low p-values (all less than 0.05), indicating statistically significant relationships with car prices. Including these variables in the model would be valuable as they represent different engine types, which can impact car prices.
+Interpretation; 
+
+Adjusted R square indicates that 22% of variance in the price of car can be explained by the drive wheel. The variables "ohcf," "L," "ohc," and "rotor" have low p-values (all less than 0.05), indicates statistical significance relationships with car prices. Including these variables in the model would be valuable.
 
 #Car Body
- 
-Interpretation;
 
-the adjusted R square indicates that 14% of the variance in the price of the car can be explained by the drive wheel. The p-values associated with the rwd indicate that it is statistically significant but that of fwd indicates that it is not statistically significant and may not provide meaningful insights or improve model predictive accuracy. 
+ Interpretation from regression analysis 
 
 #Door Number
-
-Interpretation; the adjusted R square of 0% shows that the price of car cannot be explained by the door number. The p-values associated with the door number (four) is very high which indicates that it is not statistically significant and including it in the model may not be necessary as it does not provide strong evidence of influencing car price.
+Price of car cannot be explained by the door number (Adjusted R is 0%). The door number “four”is not statistically significant and including it in the model may not be necessary as it does not provide strong evidence of influencing car price.
 
 #Aspiration
 
@@ -228,8 +225,7 @@ The presence of heteroscedasticity in the data, possibly due to the small sample
 
 CONCLUSION
 
-The regression model developed explains approximately 79% of the variance in car prices, 21% can is dependent on other unknown variables. However, further improvements or alternative modelling approaches can be considered. 
-Overall, this analysis provides insights into the significant variables and their relationships with car prices, helping to understand the dynamics of the car market and providing a foundation for predicting car prices using multiple linear regression analysis.  
+The regression model developed explains approximately 79% of the variance in car prices. However, further
 
 RECOMMENDATION
 
