@@ -72,8 +72,8 @@ Highway mpg|-0.70| Weak Negative correlation
 Significant Numerical Variables based on the correlation analysis
 
 1.	Curb weight	
-2.	Engine Size	
-3.      Horsepower
+2.	Engine Size
+3.	Horsepower
    
 Calculating VIF of each variable
 
@@ -89,72 +89,55 @@ CATEGORICAL VARIABLES
 
 They were converted into dummy variables, and regression analysis was performed.
 
-Regression Analysis Result for each variable
+Regression Analysis interpretation for each variable
 
 #Car Model
-
-Interpretation from regression analysis;
 
 38% of the variation in the price of a car is dependent on the car model and the P-values show that the variables are statistically significant. However, the higher standard error associated with the coefficient indicates that the estimate not precise and therefore not reliable which reduces the confidence that we can have in the estimate. 
 
 #Drive Wheel
 
-Interpretation from regression analysis; 
-
 Adjusted R square indicated that 41% of the variance in the price of the car can be explained by the drive wheel specifically the variable "rwd" wwhich is statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
 
-#Cylinder Number
-
-Interpretation from regression analysis; 
+#Cylinder Number 
 
 Adjusted R square indicates that 63% of variance in the price of car can be explained by the cylinder number. The variables "four," "six," "five," "three," and "two" have low p-values (all less than 0.05), suggesting statistically significant relationships with car prices. Including these variables in the model would be relevant as they provide information about the engine's cylinder configuration, which can influence car prices.
 
 #Engine Type
 
-Interpretation; 
-
 Adjusted R square indicates that 22% of variance in the price of car can be explained by the drive wheel. The variables "ohcf," "L," "ohc," and "rotor" have low p-values (all less than 0.05), indicates statistical significance relationships with car prices. Including these variables in the model would be valuable.
 
-#Car Body
+#Car Body 
 
- Interpretation from regression analysis 
+Adjusted R square indicates that 14% of variance in the price of car can be explained by the drive wheel. The p-values associated with the rwd indicates that it is statistically significant but that of fwd is not and may not provide meaningful insights or improve model predictive accuracy.
 
 #Door Number
+
 Price of car cannot be explained by the door number (Adjusted R is 0%). The door number “four”is not statistically significant and including it in the model may not be necessary as it does not provide strong evidence of influencing car price.
 
 #Aspiration
-
-Interpretation;
 
 The p-value indicates that the analysis is statistically significant but the adjusted R square indicates that the variable contributes 3.0% to the variance in the price of the car and so including this to the predictive model may not contribute valuable information or enhance the model's performance.
 
 #Engine Location
 
-Interpretation; 
-
 The R square indicates that 11% of the variance in the price of the car can be explained by the engine location. The p-values show that the analysis is statistically significant. This variable would however not be included in the model due to the low coefficient of determination.
 
 #Fuel Type
 
-Interpretation; the adjusted R square indicates that 10% of the variance in the price of the car can be explained by the fuel type. The p-values indicate that it is not statistically significant (above the threshold of 0.05) and including it in the model may not provide meaningful insights or improve model predictive accuracy.
+Adjusted R square indicates that 10% of the variance in the price of the car can be explained by the fuel type. The p-values indicate that it is not statistically significant (above the threshold of 0.05) and including it in the model may not provide meaningful insights or improve model predictive accuracy.
 
 #Fuel System
 
-Interpretation;
-
-Adjusted R square indicates that 36% of the variance in the price of the car can be explained by the fuel system. However, none of the fuel system variables (mpfi, 2bbl, 1bbl, Spdi, 4bbl, Idi, mfi) show statistically significant relationships with car prices, as their respective p-values are above the typical threshold of 0.05. Including these variables in the model may not contribute significant predictive power and could introduce noise or unnecessary complexity. 
+36% of the variance in the price of the car can be explained by the fuel system. However, none of the fuel system variables (mpfi, 2bbl, 1bbl, Spdi, 4bbl, Idi, mfi) show statistically significant relationships with car prices, as their respective p-values are above the typical threshold of 0.05. Including these variables in the model may not contribute significant predictive power and could introduce noise or unnecessary complexity. 
 
 Categorical variables with higher significance after regression analysis
 
 1.	Cylinder Number
-2.	
-3.	Engine type
-4.	
-5.	Drive wheel
+2.	Engine type
+3.	Drive wheel
    
-Adjusted R square indicated that 78% of the variance in the price of the car can be explained by these categorical variables. The p-values associated with all the variables show evidence of statistical significance (below 0.05)
-
-Multiple Regression analysis on the categorical and numerical variables indicate 94% of the variance in car price is explained by the model. 
+Multiple Regression analysis on the categorical and numerical variables indicates 94% of the variance in car price is explained by the model. 
 
 Calculating the VIF of each of the variables to check for multicollinearity
 
