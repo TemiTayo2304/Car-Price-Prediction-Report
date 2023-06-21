@@ -1,15 +1,16 @@
 # Car-Price-Prediction-Report
 CAR PRICE PREDICTION USING MULTIPLE LINEAR REGRESSION ANALYSIS IN EXCEL
 
-INTRODUCTION
+OBJECTIVES
 
-The analysis aims at identifying significant variables required to predict the price of a car and to describe how well the variables describe the price of the car. 
+1. To identify significant variables required to predict the price of a car.
+2. How well do these variables describe the price of the car?
 
 UNDERSTANDING DATA STRUCTURE
 
-The dataset used for this analysis with a 250 sample size was gotten from Kaggle, containing car prices and attributes related to the predictive analysis. The dataset contained 13 numerical variables and 10 categorical variables.
+The dataset has a sample size of 250 was gotten from Kaggle, containing 13 numerical and 10 categorical car attributes.
 
-By understanding the data structure and the variables involved, correlation analysis was further done to explore the relationships between these car attributes and the prices. This analysis will provide insights into the factors that may influence car prices and help understand the dynamics of the car market.
+Correction and regression analysis was further done to explore the relationships between these car attributes and the prices to provide insights and help understand the dynamics of the car marke.
 
 DATA CLEANING AND EXPLORATION
 
@@ -31,13 +32,7 @@ Median	| 10295.00
 
 Mode	| 16500.00
 
-Standard Deviation| 7988.85
-
-Sample Variance| 63821761.58
-
-Kurtosis| 3.05
-
-Skewness| 1.78
+Standard Deviation| 7988.8
 
 Range| 40282.00
 
@@ -49,8 +44,6 @@ CORRELATION AND MULTIPLE REGRESSION ANALYSIS
 NUMERICAL VARIABLES
 
 Correlation result summary
-
-Independent variables
 
 Wheelbase| 0.58| Moderate Positive correlation
 
@@ -80,13 +73,11 @@ Highway mpg|-0.70| Weak Negative correlation
 
 Significant Numerical Variables based on the correlation analysis
 
-1.	Curb weight
-2.	
-3.	Engine Size
-4.	
-5.	Horsepower
+1.	Curb weight	
+2.	Engine Size	
+3. Horsepower
    
-Calculating Variance Inflation Factor (VIF) of each variable
+Calculating VIF of each variable
 
 •	Engine size; 4.77
 
@@ -94,7 +85,7 @@ Calculating Variance Inflation Factor (VIF) of each variable
 
 •	Curb weight; 3.77
 
-To address multicollinearity, the engine size which has high value of VIF (approximately 5) was removed.
+Engine size with high VIF value (approximately 5) was removed to address multicollinearity
 
 CATEGORICAL VARIABLES
 
@@ -102,9 +93,7 @@ They were converted into dummy variables, and regression analysis was performed.
 
 Regression Analysis Result for each variable
 
-#Car Name
-
-this regression analysis was performed after removing variables with evidence of possible multicollinearity and presence of extreme values.
+#Car Model
 
 Interpretation from regression analysis;
 
@@ -114,7 +103,7 @@ Interpretation from regression analysis;
 
 Interpretation from regression analysis; 
 
-the adjusted R square indicates that 41% of the variance in the price of the car can be explained by the drive wheel. The variable "rwd" (Rear-Wheel Drive) has a low p-value of 0.00, indicating a statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
+Adjusted R square indicated that 41% of the variance in the price of the car can be explained by the drive wheel. The variable "rwd" (Rear-Wheel Drive) has a low p-value of 0.00, indicating a statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
 
 #Cylinder Number
 
@@ -171,6 +160,7 @@ Adjusted R square indicated that 78% of the variance in the price of the car can
 Multiple Regression analysis on the categorical and numerical variables indicate 94% of the variance in car price is explained by the model. 
 
 Calculating the VIF of each of the variables to check for multicollinearity
+
 Six; 6.66 
 
 five; 5.47
@@ -234,7 +224,7 @@ Assessment: Based on this evaluation, the prediction is slightly overestimating 
 
 LIMITATION
 
-The presence of heteroscedasticity in the data, possibly due to the small sample size pf 205 observations, may have impacted the accuracy of the correlation analysis. The small sample size also limits the generalizability of the findings. Future research with larger samples and robust statistical techniques is recommended.
+The presence of heteroscedasticity in the data, possibly due to the small sample size pf 205 observations, may have impacted the accuracy of the correlation analysis. The small sample size also limits the generalizability of the findings. 
 
 CONCLUSION
 
