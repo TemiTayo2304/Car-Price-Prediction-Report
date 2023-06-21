@@ -8,6 +8,7 @@ The analysis aims at identifying significant variables required to predict the p
 UNDERSTANDING DATA STRUCTURE
 
 The dataset used for this analysis with a 250 sample size was gotten from Kaggle, containing car prices and attributes related to the predictive analysis. The dataset contained 13 numerical variables and 10 categorical variables.
+
 By understanding the data structure and the variables involved, correlation analysis was further done to explore the relationships between these car attributes and the prices. This analysis will provide insights into the factors that may influence car prices and help understand the dynamics of the car market.
 
 DATA CLEANING AND EXPLORATION
@@ -22,13 +23,13 @@ DESCRIPTIVE STATISTICS OF THE CAR PRICES
 	
 Summary statistics table
 	
-Mean	13276.71
-Standard Error	557.97
-Median	10295.00
-Mode	16500.00
-Standard Deviation	7988.85
-Sample Variance	63821761.58
-Kurtosis	3.05
+Mean	| 13276.71
+Standard Error	| 557.97
+Median	| 10295.00
+Mode	| 16500.00
+Standard Deviation| 7988.85
+Sample Variance| 63821761.58
+Kurtosis| 3.05
 Skewness	1.78
 Range	40282.00
 Minimum	5118.00
