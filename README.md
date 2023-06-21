@@ -93,23 +93,23 @@ Regression Analysis interpretation for each variable
 
 #Car Model
 
-38% of the variation in the price of a car is dependent on the car model and the P-values show that the variables are statistically significant. However, the higher standard error associated with the coefficient indicates that the estimate not precise and therefore not reliable which reduces the confidence that we can have in the estimate. 
+_38% of the variation in the price of a car is dependent on the car model and the P-values show that the variables are statistically significant. However, the higher standard error associated with the coefficient indicates that the estimate not precise and therefore not reliable which reduces the confidence that we can have in the estimate._
 
 #Drive Wheel
 
-Adjusted R square indicated that 41% of the variance in the price of the car can be explained by the drive wheel specifically the variable "rwd" wwhich is statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy.
+*41% of the variance in the price of the car can be explained by the drive wheel specifically the variable "rwd" wwhich is statistically significant relationship with car prices. Including this variable in the model would be beneficial as it shows a strong association with the target variable. “fwd” on the other hand is not statistically significant and may not be needed to improve model predictive accuracy*
 
 #Cylinder Number 
 
-Adjusted R square indicates that 63% of variance in the price of car can be explained by the cylinder number. The variables "four," "six," "five," "three," and "two" have low p-values (all less than 0.05), suggesting statistically significant relationships with car prices. Including these variables in the model would be relevant as they provide information about the engine's cylinder configuration, which can influence car prices.
+*63% of variance in the price of car can be explained by the cylinder number. The variables "four," "six," "five," "three," and "two" have low p-values (all less than 0.05), suggesting statistically significant relationships with car prices. Including these variables in the model would be relevant as they provide information about the engine's cylinder configuration, which can influence car prices*
 
-#Engine Type
+**Engine Type**
 
-Adjusted R square indicates that 22% of variance in the price of car can be explained by the drive wheel. The variables "ohcf," "L," "ohc," and "rotor" have low p-values (all less than 0.05), indicates statistical significance relationships with car prices. Including these variables in the model would be valuable.
+*Adjusted R square indicates that 22% of variance in the price of car can be explained by the drive wheel. The variables "ohcf," "L," "ohc," and "rotor" have low p-values (all less than 0.05), indicates statistical significance relationships with car prices. Including these variables in the model would be valuable.*
 
-#Car Body 
+**Car Body**
 
-Adjusted R square indicates that 14% of variance in the price of car can be explained by the drive wheel. The p-values associated with the rwd indicates that it is statistically significant but that of fwd is not and may not provide meaningful insights or improve model predictive accuracy.
+*14% of variance in the price of car can be explained by the drive wheel. The p-values associated with the rwd indicates that it is statistically significant but that of fwd is not and may not provide meaningful insights or improve model predictive accuracy.*
 
 #Door Number
 
