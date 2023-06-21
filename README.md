@@ -8,7 +8,7 @@
 
 **UNDERSTANDING DATA STRUCTURE**
 
-The dataset has a sample size of 250 was gotten from Kaggle, containing 13 numerical and 10 categorical car attributes.
+The dataset has a sample size of 250, containing 13 numerical and 10 categorical car attributes.
 
 **DATA CLEANING AND EXPLORATION**
 
@@ -17,25 +17,6 @@ The dataset has a sample size of 250 was gotten from Kaggle, containing 13 numer
 •	The Car brands were extracted from the car name column and converted to the proper text format.
 
 •	The prices of the car were adjusted to the right format.
-
-**DESCRIPTIVE STATISTICS OF THE CAR PRICES**
-	
-*Summary statistics table*
-	
-Mean	| 13276.71
-
-Standard Error	| 557.97
-
-Median	| 10295.00
-
-Mode	| 16500.00
-
-Standard Deviation| 7988.8
-
-Range| 40282.00
-
-Count| 205.00
-
 
 **CORRELATION AND MULTIPLE REGRESSION ANALYSIS**
 
@@ -131,7 +112,7 @@ _38% of the variation in the price of a car is dependent on the car model and th
 
 *36% of the variance in the price of the car can be explained by the fuel system. However, none of the fuel system variables (mpfi, 2bbl, 1bbl, Spdi, 4bbl, Idi, mfi) show statistically significant relationships with car prices, as their respective p-values are above the typical threshold of 0.05. Including these variables in the model may not contribute significant predictive power and could introduce noise or unnecessary complexity.*
 
-Categorical variables with higher significance after regression analysis
+**Categorical variables with higher significance after regression analysis**
 
 1.	Cylinder Number
 2.	Engine type
@@ -179,7 +160,7 @@ The presence of heteroscedasticity in the data, possibly due to the small sample
 
 **CONCLUSION**
 
-The regression model developed explains approximately 79% of the variance in car prices. However, further
+The regression model developed explains approximately 79% of the variance in car prices, 21% can is dependent on other unknown variables. However, further improvements or alternative modelling approaches can be considered.
 
 **RECOMMENDATION**
 
