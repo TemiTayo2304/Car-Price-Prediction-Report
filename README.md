@@ -160,8 +160,13 @@ The presence of heteroscedasticity in the data, possibly due to the small sample
 
 **CONCLUSION**
 
-The regression model developed explains approximately 79% of the variance in car prices, 21% can is dependent on other unknown variables. However, further improvements or alternative modelling approaches can be considered.
+The regression model developed explains approximately 79% of the variance in car prices, 21% can is dependent on other unknown variables. However, further improvements or alternative 
+modelling approaches can be considered.
 
 **RECOMMENDATION**
 
 Future research in car price prediction should focus on enhancing the robustness and generalizability of findings. This can be achieved simply by increasing the sample size to improve statistical power and enable broader generalization. Additionally, employing advanced statistical techniques specifically designed to address heteroscedasticity would enhance the accuracy of the analysis.
+
+![Car and the car](https://github.com/TemiTayo2304/Car-Price-Prediction-Report/assets/127751727/c9e92f0e-5f50-44fc-b93d-540bb23be632)
+
+
